@@ -24,11 +24,9 @@ class SizeCri extends Criterion{
 			return file.getSize() < comparand;
 		case LE:
 			return file.getSize() <= comparand;
-		case NE:
-			return file.getSize() != comparand;
 		default:
-			//never reached
-			return false;
+			return file.getSize() != comparand;
+
 		}
 	}
 }
